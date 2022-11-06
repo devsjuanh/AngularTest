@@ -1,6 +1,6 @@
 <table *ngIf="coofes.length >= 0" class="table table-striped">
     <thead>
-        <tr>
+        <tr class="title">
             <th scope="col">#</th>
             <th scope="col">Nombre</th>
             <th scope="col">Tipo</th>
@@ -18,9 +18,9 @@
     </tbody>
 </table> 
 
-<p>Total de café de origen: {{this.typeOrigin.length}}</p>
-<p>Total café blend: {{this.typeBlend.length}}</p>
-
 <div *ngIf="coofes.length == 0"> 
     <p>loading data</p>
 </div>
+
+<p>Total de café de origen: {{this.typeOrigin.length}}</p>
+<p>Total café blend: {{this.typeBlend.length}}</p>
