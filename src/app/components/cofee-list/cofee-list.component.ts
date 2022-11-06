@@ -5,11 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './cofee-list.component.html',
   styleUrls: ['./cofee-list.component.css']
 })
-export class CofeeListComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class CofeeListComponent {
 
 }

@@ -10,7 +10,6 @@ import { CofeeModule } from './components/cofee/cofee.module';
 @NgModule({
   declarations: [
     AppComponent,
-    CofeeListComponent
   ],
   imports: [
     HttpClientModule,
