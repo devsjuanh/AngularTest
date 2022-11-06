@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CofeeComponent } from './components/cofee/cofee.component';
 import { CofeeListComponent } from './components/cofee-list/cofee-list.component';
 import { CofeeModule } from './components/cofee/cofee.module';
+
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { CofeeModule } from './components/cofee/cofee.module';
     CofeeListComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     CofeeModule
   ],
