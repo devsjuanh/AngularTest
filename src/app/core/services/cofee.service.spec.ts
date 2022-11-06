@@ -9,7 +9,7 @@ describe('CofeeServiceService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({});
     httpClientSpy = jasmine.createSpyObj('HttpClient', ['get']);
-    service = TestBed.inject(CofeeService);
+    service = new CofeeService(httpClientSpy as any)
   });
 
   it('should be created', () => {

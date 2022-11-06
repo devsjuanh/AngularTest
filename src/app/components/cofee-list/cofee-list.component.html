@@ -9,8 +9,8 @@
     </thead>
 
     <tbody>
-        <tr *ngFor="let cofee of coofes; index as i">
-            <th scope="row">{{i}}</th>
+        <tr class="coffees" *ngFor="let cofee of coofes; index as i">
+            <th scope="row">{{i+1}}</th>
             <td>{{cofee.nombre}}</td>
             <td>{{cofee.tipo}}</td>
             <td>{{cofee.region}}</td>

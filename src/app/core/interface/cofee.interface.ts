@@ -4,6 +4,6 @@ export interface Cofee {
     tipo: string;
     region: string;
     sabor: string;
-    altura: string;
-    image: string;
+    altura: number;
+    imagen: string;
 }
