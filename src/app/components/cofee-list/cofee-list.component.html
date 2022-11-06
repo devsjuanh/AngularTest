@@ -1,11 +1,26 @@
-<table class="table table-dark table-hover">
+<table *ngIf="coofes.length >= 0" class="table table-striped">
     <thead>
-        <th>#</th>
-        <th>Nombre</th>
-        <th>Tipo</th>
-        <th>Region</th>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Región</th>
+        </tr>
     </thead>
+
     <tbody>
-        <tr class="table-active"></tr>
+        <tr *ngFor="let cofee of coofes; index as i">
+            <th scope="row">{{i}}</th>
+            <td>{{cofee.nombre}}</td>
+            <td>{{cofee.tipo}}</td>
+            <td>{{cofee.region}}</td>
+        </tr>
     </tbody>
 </table> 
+
+<p>Total de café de origen: {{this.typeOrigin.length}}</p>
+<p>Total café blend: {{this.typeBlend.length}}</p>
+
+<div *ngIf="coofes.length == 0"> 
+    <p>loading data</p>
+</div>
